@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Hack</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <div class="overlay">
+    <h1>Start Drawing</h1>
+    <button class="overlay-btn" id="overlay-btn">Start</button>
+  </div>
+
+  <!-- Dark, Light Mode -->
+  <div class="dark-light-mode w-0" id="dark-light-mode">
+    <span></span>
+  </div>
+
+  <!-- Canvas Rect -->
+  <canvas class="canvas" id="canvas" width="800" height=800>
+
+  </canvas>
+
+  <!-- Control Btns -->
+  <div class="canvas-controls h-0" id="canvas-controls">
+    <div class="icon icon-platte" id="canvas-platte">
+      <img src="images/platte.svg" alt="page icon">
+    </div>
+    <div class="icon icon-edit" id="canvas-draw">
+      <img src="images/edit.svg" alt="page icon">
+    </div>
+    <div class="icon icon-eraser" id="canvas-erase">
+      <img src="images/eraser.svg" alt="page icon">
+    </div>
+    <div class="icon icon-clear" id="canvas-clear">
+      <img src="images/magicpen.svg" alt="page icon">
+    </div>
+    <div class="icon icon-main" id="canvas-display">
+      <img src="images/main.svg" alt="page icon">
+    </div>
+  </div>
+  <!-- End of Canvas -->
+
+  <div class="colors-modal w-0" id="colors-modal">
+    <div class="colors-modal-container">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+    </div>
+  </div>
+
+  <script src="canvas.js"></script>
+
+</body>
+
+</html>
